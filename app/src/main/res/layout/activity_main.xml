@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/roulette_8"
+            android:adjustViewBounds="true"
+            android:id="@+id/rouletteImage"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <Button android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="onClickButtonRotation"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/start"></Button>
+
+
+
+        <ImageView android:id="@+id/imageSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/selected"
+            android:layout_above="@+id/rouletteImage"
+            android:layout_centerHorizontal="true"></ImageView>
+
+        <Button android:id="@+id/buttonUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/up"
+            android:onClick="buttonUp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/buttonStart"
+            android:layout_alignParentBottom="true"></Button>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonDown"
+            android:background="@drawable/down"
+            android:layout_marginRight="20dp"
+            android:onClick="buttonDown"
+            android:layout_toLeftOf="@+id/buttonStart"
+            android:layout_alignParentBottom="true"
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
